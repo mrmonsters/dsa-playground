@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  app:
+    user: $DOCKER_USER
+    environment:
+      NPM_CONFIG_CACHE: /home/dev/.npm
+      NPM_TOKEN: $NPM_TOKEN
+      YARN_CACHE_FOLDER: /home/dev/.yarn
+    image: 'node:alpine-v20'
+    volumes:
+      - $PWD:/usr/app
+      - $HOME/.npm:/home/dev/.npm
+      - $HOME/.yarn:/home/dev/.yarn
+    working_dir: '/usr/app'
