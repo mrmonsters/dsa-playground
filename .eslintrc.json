@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {}
+}

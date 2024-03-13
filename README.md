@@ -16,10 +16,18 @@ A collection of Data Structures and Algorithms challenges.
      export DOCKER_USER="$(id -u):$(id -g)"
      ```
 
-1. Start playing:
+1. Install the dependencies:
 
    - ```bash
-     docker compose run -ti --rm app node path/to/file
+     docker compose run -ti --rm app yarn --frozen-lockfile
      ```
 
-1. This runs `node` in a Docker container. Alternatively, you can use `node` installed in your local machine.
+1. Each solution should be accompanied by a test file with test data.
+
+1. Start asserting your solution by running the test file:
+
+   - ```bash
+     docker compose run -ti --rm app yarn test path/to/test_file
+     ```
+
+1. This runs `yarn` in a Docker container. Alternatively, you can use `yarn` installed in your local machine.
