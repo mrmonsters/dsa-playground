@@ -2,7 +2,7 @@
 
 # DSA Playground
 
-A collection of Data Structures and Algorithms challenges.
+A collection of data structures and algorithms challenges.
 
 [Getting Started](#getting-started)
 
