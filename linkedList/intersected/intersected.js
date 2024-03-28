@@ -90,8 +90,8 @@ function isCircular(node) {
   return false; // if hare reaches the end of the list, it's not circular
 }
 
-export default function solve(input) {
-  const entries = input.split('\n');
+export default function solve(A) {
+  const entries = A.split('\n');
   const description = entries.filter((entry) => entry.indexOf('->') !== -1);
   const fixtures = entries.filter((entry) => entry.indexOf('->') === -1);
   const nodesMap = parse(description);
