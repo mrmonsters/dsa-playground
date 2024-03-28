@@ -16,7 +16,7 @@ For example,
 
 * Given below value for A, the function should return `[false, true, true, false]`:
 
-  * ```javacript
+  * ```javascript
     A->B
     B->C
     R->S
